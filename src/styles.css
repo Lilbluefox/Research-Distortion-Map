@@ -354,6 +354,7 @@ h3 {
 .cell.isOrigin .cellStage {
   display: inline-flex;
   align-items: center;
+  max-width: calc(100% - 50px);
   min-height: 40px;
   margin-bottom: 10px;
   margin-left: 50px;
@@ -365,12 +366,16 @@ h3 {
 
 .cellStage {
   display: inline-block;
+  max-width: 100%;
   margin-bottom: 8px;
   color: #5f4b08;
   font-size: 13px;
   font-weight: 800;
+  line-height: 1.15;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .cell p {
